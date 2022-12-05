@@ -43,7 +43,7 @@ class Fuzzer:
 
 
 
-    def run(self, inputs, func: Callable, mutation_chance=0.5, trials=100,  mutation_depth: int=100, with_ret_val=False):
+    def run(self, inputs, func: Callable, mutation_chance=0.5, trials=100,  mutation_depth: int=10, with_ret_val=False):
         '''
         Function for starting the fuzzing
         - inputs can either be a single value that will be mutated or a list
